@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+br {
+    margin-top: 10rem;
+}
+
+.table {
+    &>:nth-child(2n) {
+        background-color: #fceaea;
+    }
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 32rem 10rem 6rem 6rem 6rem 6rem;
+    border-bottom: 1px solid gray; // height: 3rem;
+    // align-items: center;
+    // justify-items: center;
+
+    &:hover {
+        background-color: #ccc;
+        transition: .2s all;
+    }
+}
+
+.col1 {
+    // display: flex;
+    // text-align: center;
+    // align-items: center;
+    padding: .4rem;
+}
+
+.col {
+    // display: flex;
+    text-align: center;
+    // justify-content: center;
+    // align-items: center;
+    padding: .3rem;
+}
+
+.signupButton,
+.unsignButton {
+    padding: .4rem;
+}
