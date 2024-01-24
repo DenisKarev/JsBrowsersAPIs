@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+.app,
+.icon-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+img {
+    position: relative;
+    width: 98vw;
+    height: auto;
+    display: block;
+}
+
+.like {
+    display: flex;
+    color: white;
+    position: fixed;
+    // max-height: 13vh;
+    top: 0;
+    cursor: pointer;
+
+    & svg {
+        height: 80px;
+    }
+
+    &-count {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    &-info {
+        left: 90px;
+    }
+
+    &:hover {
+        & svg {
+
+            path,
+            text {
+                fill: rgb(197, 125, 137);
+            }
+        }
+    }
+}
+
+.icon {
+    &-text {
+        color: white;
+        font-size: 10px;
+    }
+}
+
+.history {
+    position: fixed;
+    left: 5vw;
+    top: 90px;
+    width: 88vw;
+    min-height: min-content;
+    max-height: 80vh;
+    font-size: 24px;
+
+    color: white;
+    background-color: rgba(83, 56, 56, 0.7);
+
+    &-button {
+        right: 0px;
+        width: 10vw;
+
+        font-size: 24px;
+        font-weight: bold;
+
+        &::after {
+            content: 'History of pictures';
+        }
+
+        &:hover {
+            color: rgb(197, 125, 137);
+        }
+    }
+
+    &_list_item {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+    }
+}
+
+.info {
+    position: fixed;
+    left: 5vw;
+    top: 90px;
+    width: 88vw;
+    min-height: min-content;
+    max-height: 80vh;
+    font-size: 20px;
+
+    color: white;
+    background-color: rgba(83, 56, 56, 0.7);
+}
+
+.clicked {
+    &::after {
+        content: 'hide history';
+    }
+}
+
+.active {
+    color: rgb(197, 125, 137);
+
+    & svg {
+
+        path,
+        text {
+            fill: rgb(197, 125, 137);
+        }
+    }
+}
